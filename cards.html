@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Designs & Display Properties</title>
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Pricing & Membership Tiers</h1>
+        <p>Explore our subscription tiers and learn about CSS display properties.</p>
+    </header>
+
+    <main>
+        <!-- 1. Three Card Designs -->
+        <section class="cards-container">
+            <!-- Basic Card -->
+            <div class="card basic-card">
+                <h2>Basic Tier</h2>
+                <p class="price">$9 / month</p>
+                <p class="description">Essential features for individuals starting out with web development practice.</p>
+                <button class="card-btn">Choose Basic</button>
+            </div>
+
+            <!-- Standard Card -->
+            <div class="card standard-card">
+                <h2>Standard Tier</h2>
+                <p class="price">$29 / month</p>
+                <p class="description">Ideal for growing learners requiring advanced components and priority support.</p>
+                <button class="card-btn">Choose Standard</button>
+            </div>
+
+            <!-- Premium Card -->
+            <div class="card premium-card">
+                <h2>Premium Tier</h2>
+                <p class="price">$59 / month</p>
+                <p class="description">Full access to all multi-page projects, code reviews, and mentorship workshops.</p>
+                <button class="card-btn">Choose Premium</button>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- 2. Display Property Demonstrations -->
+        <section class="display-section">
+            <h2>CSS Display Property Demonstrations</h2>
+            <p>Understanding how elements flow and occupy space on a webpage.</p>
+
+            <!-- Display: Block -->
+            <div class="demo-box block-demo">
+                <code>display: block</code> — Takes up 100% width, forces line breaks above and below.
+            </div>
+
+            <!-- Display: Inline -->
+            <p class="inline-container">
+                This is a paragraph containing <span class="demo-inline">inline elements</span> which flow within text and 
+                <span class="demo-inline">do not respect</span> explicit width or height settings.
+            </p>
+
+            <!-- Display: Inline-Block -->
+            <div class="inline-block-group">
+                <div class="demo-box inline-block-demo">Inline-Block 1</div>
+                <div class="demo-box inline-block-demo">Inline-Block 2</div>
+                <div class="demo-box inline-block-demo">Inline-Block 3</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Card Designs Assignment</p>
+    </footer>
+
+</body>
+</html>

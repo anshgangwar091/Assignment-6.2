@@ -1,0 +1,154 @@
+/* cards.css — Assignment 6.2 */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7fafc;
+    color: #2d3748;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+header, footer {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #1a365d;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 40px 0;
+}
+
+/* Cards Container Layout */
+.cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+/* Base Card Styling with width, max-width, height, and border-radius */
+.card {
+    width: 280px;
+    max-width: 100%;
+    min-height: 320px;
+    padding: 25px;
+    border-radius: 12px; /* 4. Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.card-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* 3. Distinct Background Colors and Borders for Each Card */
+.basic-card {
+    background-color: #ffffff;
+    border: 2px solid #cbd5e0;
+}
+.basic-card .price { color: #4a5568; }
+.basic-card .card-btn { background-color: #cbd5e0; color: #2d3748; }
+.basic-card .card-btn:hover { background-color: #a0aec0; }
+
+.standard-card {
+    background-color: #ebf8ff;
+    border: 2px solid #3182ce;
+}
+.standard-card .price { color: #2b6cb0; }
+.standard-card .card-btn { background-color: #3182ce; color: #ffffff; }
+.standard-card .card-btn:hover { background-color: #2b6cb0; }
+
+.premium-card {
+    background-color: #fffaf0;
+    border: 2px solid #d69e2e;
+}
+.premium-card .price { color: #b7791f; }
+.premium-card .card-btn { background-color: #d69e2e; color: #ffffff; }
+.premium-card .card-btn:hover { background-color: #b7791f; }
+
+
+/* 5. Display Property Demonstrations */
+.display-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.demo-box {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* Display: Block */
+.block-demo {
+    display: block; /* Default for divs */
+    width: 100%;
+    height: 50px;
+    background-color: #e53e3e;
+}
+
+/* Display: Inline */
+.demo-inline {
+    display: inline;
+    background-color: #319795;
+    color: #ffffff;
+    padding: 4px 8px;
+    /* Note: Width and height do not apply to inline elements */
+}
+
+/* Display: Inline-Block */
+.inline-block-group {
+    margin-top: 15px;
+}
+
+.inline-block-demo {
+    display: inline-block; /* Sits side-by-side but respects width/height */
+    width: 150px;
+    height: 60px;
+    background-color: #805ad5;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 30px;
+}
